@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+h1{
+    color: blueviolet;
+}
+p{
+    color: indigo
+}
+    </style>
+    <header>
+        <h1>
+            Hogwarts 
+        </h1>
+    </header>
+    <p> Big RavenClaw</p>
+    <script>
+    function guessGame() {
+    var number = Math.random() * 11 | 0,
+        guess,
+        text = 'Guess a number:';
+    do {
+        guess = prompt(text);
+        if (number < guess) {
+            text = "You've guessed too high!";
+        } else if (number > guess) {
+            text = "You've guessed too low!";
+        }
+    } while (guess != number);
+    document.write("Good Job!");
+}
+guessGame();
+
+    </script>
+    
+</body>
+</html>
