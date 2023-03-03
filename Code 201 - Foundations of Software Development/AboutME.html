@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header{
+            background-image: url(https://i.pinimg.com/originals/5c/eb/93/5ceb93069308d29ac5e6755998773005.jpg) ;
+            color: rgb(251, 251, 252);
+        }
+        body{
+            background-color: rgb(35, 35, 69);
+            color: rgb(255, 255, 255);
+            
+        }
+        p{
+            margin-right: 100px;
+            margin-left: 160px;
+            font-size: larger;
+        }
+        
+    </style>
+    <header>
+    <h1> 
+        CEO Shiesty
+    </h1>
+    <h2>
+        My name is Deon James
+    </h2>
+    </header>
+    <p> I'm 18 , I graduated from Germantown High, but I'm  kinda of mad because of should stayed at Ridgway High. I have only done a semater at TSU and I hated it. I love tecnology. My favorite game of all time is Halo, but ay the moment it is Destiny. Im book smart not street smart. Favor pair of shoes is
+    </p>
+    <script>
+    document.getElementById("Quiz").onclick = TakeQuiz();
+       function TakeQuiz()
+{
+        var house =prompt(" What is your house");
+       alert  (house)
+       switch(house)
+
+    {
+        case "Ravenclaw":
+            alert ("That what I like to hear");
+            break;
+        case "Hufflepuff":
+            alert  ("Ok lil-huff");
+            break;
+        case "Slytherin":
+            alert  ("Evil");
+            break;
+        case "Gryffindor":
+            alert (" You just wanna be good so bad");
+            break;
+    default: 
+    alert ("Houseless I see");
+    }
+    var school = prompt("What school do I hate the most?");
+    alert(school)
+    switch(school)
+    {
+        case "TSU":
+            alert ("True");
+            break;
+        default:
+            alert ("False");
+    }
+    var color = prompt("What my favorite color?");
+    alert(color)
+    switch(color)
+    {
+        case "White":
+            alert ("The oppsite");
+            break;
+        case "Black":
+            alert("Yessir");
+            break;
+        case "Pink":
+            alert("We gotta fight now");
+            break;
+        default:
+            alert("Just wrong ")
+    }
+    var game = prompt("What is my favorite game at the moment");
+    alert(game)
+    switch(game)
+    {
+        case "Halo":
+            alert("Try reading");
+            break;
+        default:
+            alert("Thank you for reading")
+    }
+    function guessGame() {
+    var number = Math.random() * 11 | 0,
+        guess,
+        text = 'Guess a number:';
+    do {
+        guess = prompt(text);
+        if (number < guess) {
+            text = "You've guessed too high!";
+        } else if (number > guess) {
+            text = "You've guessed too low!";
+        }
+    } while (guess != number);
+    document.write("Good Job!");
+}
+guessGame();
+}
+ //const seven = ["Halo", "Destiny," "MonsterHunter"];
+  
+    </script>
+    <footer>
+        <input id="Quiz" type="button" onclick="TakeQuiz();" value="Start Quiz" />
+    </footer>
+</body>
+</html>
